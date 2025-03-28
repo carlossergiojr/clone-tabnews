@@ -1,7 +1,12 @@
 import database from "infra/database";
+import orchestrator from "tests/orchestrator.js";
 
-beforeAll(cleanDatabase)
-async function cleanDatabase(){
+beforeAll(async () => {
+  await orchestrator.waitForAllServices();
+  await cleanDatabase();
+});
+
+async function cleanDatabase() {
   await database.query("drop schema public cascade; create schema public;");
 }
 
