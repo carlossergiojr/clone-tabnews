@@ -8,7 +8,9 @@ const fetcher = async (url) => {
 };
 
 function StatusPage() {
-  const { data, error, isLoading } = useSWR("/api/v1/status", fetcher);
+  const { data, error, isLoading } = useSWR("/api/v1/status", fetcher, {
+    refreshInterval: 2000,
+  });
 
   if (error) {
     return <h1>Erro ao carregar o status</h1>;

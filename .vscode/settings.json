@@ -1,0 +1,28 @@
+{
+  "editor.formatOnSave": true,
+
+  "files.exclude": {
+    "node_modules": true,
+    ".swc": true,
+    ".next": true,
+    ".github": true,
+    ".husky": true,
+    ".editorconfig": true,
+    ".prettierrc": true,
+    "dist": true,
+    "yarn.lock": true,
+    "pnpm-lock.yaml": true,
+    ".gitignore": true,
+    "README.md": true,
+    "LICENSE": true,
+    "tests-report": true,
+    "jest.config.js": true,
+    "jest.env.js": true,
+    ".prettierignore": true,
+    "jsconfig.json": true,
+    ".eslintrc.json": true,
+    ".nvmrc": true,
+    "commitlint.config.js": true,
+    "postcss.config.mjs": true
+  }
+}
